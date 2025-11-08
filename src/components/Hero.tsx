@@ -8,8 +8,8 @@ export interface HeroProps {
 }
 
 export function Hero({
-  title = "Welcome to Our Platform",
-  description = "Build amazing things with our simple and powerful tools.",
+  title = "Build Your Next Project",
+  description = "A modern React template with authentication, payments, and a complete design system. Customize it to match your brand.",
   className,
 }: HeroProps) {
   return (

@@ -1,9 +1,11 @@
 {
-  "name": "temp-site",
+  "name": "react-website-template",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "description": "A modern React website template with TypeScript, Tailwind CSS, Supabase, and Stripe integration",
   "type": "module",
   "scripts": {
+    "setup": "node setup.js",
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",

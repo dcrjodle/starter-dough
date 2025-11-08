@@ -26,8 +26,8 @@ test.describe('Home Page', () => {
     const hero = page.getByTestId('hero');
     await expect(hero).toBeVisible();
 
-    await expect(hero).toContainText('Welcome to Our Platform');
-    await expect(hero).toContainText('Build amazing things with our simple and powerful tools.');
+    await expect(hero).toContainText('Build Your Next Project');
+    await expect(hero).toContainText('A modern React template');
   });
 
   test('should navigate to signup form when signup button clicked', async ({ page }) => {
