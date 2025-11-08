@@ -6,6 +6,7 @@
   "type": "module",
   "scripts": {
     "setup": "node setup.js",
+    "generate:seo": "node generate-seo.js",
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",

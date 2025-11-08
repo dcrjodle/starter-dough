@@ -18,3 +18,6 @@ export type { InputProps } from './Input';
 
 export { Button } from './Button';
 export type { ButtonProps } from './Button';
+
+export { SEO, useStructuredData } from './SEO';
+export type { SEOProps } from './SEO';

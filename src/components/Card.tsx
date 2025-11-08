@@ -18,16 +18,16 @@ export interface CardProps {
 }
 
 const variantStyles: Record<NonNullable<CardProps['variant']>, string> = {
-  default: 'bg-white border border-gray-200 rounded-lg',
-  outlined: 'bg-transparent border-2 border-gray-300 rounded-lg',
-  elevated: 'bg-white rounded-lg shadow-lg',
+  default: 'bg-[var(--color-background)] border border-[var(--color-border)] rounded-[var(--radius-lg)]',
+  outlined: 'bg-transparent border-2 border-[var(--color-border)] rounded-[var(--radius-lg)]',
+  elevated: 'bg-[var(--color-background)] rounded-[var(--radius-lg)] shadow-[var(--shadow-lg)]',
   transparent: 'bg-transparent',
 };
 
 export function Card({
   children,
   variant = 'default',
-  padding = 16,
+  padding = 'var(--spacing-md)',
   direction = 'column',
   gap = 0,
   align = 'stretch',

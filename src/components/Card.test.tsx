@@ -125,4 +125,62 @@ describe('Card', () => {
     // Center should override the align and justify props
     expect(card).toBeInTheDocument();
   });
+
+  describe('Alignment options', () => {
+    it('aligns content to flex-start (left)', () => {
+      render(<Card align="flex-start" testId="test-card">Content</Card>);
+
+      const card = screen.getByTestId('test-card');
+      expect(card).toBeInTheDocument();
+    });
+
+    it('aligns content to center', () => {
+      render(<Card align="center" testId="test-card">Content</Card>);
+
+      const card = screen.getByTestId('test-card');
+      expect(card).toBeInTheDocument();
+    });
+
+    it('aligns content to flex-end (right)', () => {
+      render(<Card align="flex-end" testId="test-card">Content</Card>);
+
+      const card = screen.getByTestId('test-card');
+      expect(card).toBeInTheDocument();
+    });
+
+    it('justifies content to flex-start', () => {
+      render(<Card justify="flex-start" testId="test-card">Content</Card>);
+
+      const card = screen.getByTestId('test-card');
+      expect(card).toBeInTheDocument();
+    });
+
+    it('justifies content to center', () => {
+      render(<Card justify="center" testId="test-card">Content</Card>);
+
+      const card = screen.getByTestId('test-card');
+      expect(card).toBeInTheDocument();
+    });
+
+    it('justifies content to flex-end', () => {
+      render(<Card justify="flex-end" testId="test-card">Content</Card>);
+
+      const card = screen.getByTestId('test-card');
+      expect(card).toBeInTheDocument();
+    });
+
+    it('justifies content with space-between', () => {
+      render(<Card justify="space-between" testId="test-card">Content</Card>);
+
+      const card = screen.getByTestId('test-card');
+      expect(card).toBeInTheDocument();
+    });
+
+    it('centers content with center prop (both align and justify)', () => {
+      render(<Card center testId="test-card">Centered</Card>);
+
+      const card = screen.getByTestId('test-card');
+      expect(card).toBeInTheDocument();
+    });
+  });
 });
