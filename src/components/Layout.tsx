@@ -1,3 +1,30 @@
+/**
+ * Layout Component - Flexbox helper for consistent spacing and alignment
+ *
+ * USAGE RULES:
+ * - ALWAYS use Layout instead of raw divs with flexbox
+ * - Use CSS variables for spacing: gap="var(--spacing-md)"
+ * - Never hardcode pixel values when CSS variables exist
+ *
+ * @example
+ * ```tsx
+ * // Basic row layout
+ * <Layout direction="row" gap="var(--spacing-md)">
+ *   <div>Item 1</div>
+ *   <div>Item 2</div>
+ * </Layout>
+ *
+ * // Centered content
+ * <Layout align="center" justify="center">
+ *   <Typography variant="h1">Centered Title</Typography>
+ * </Layout>
+ *
+ * // Column with custom spacing
+ * <Layout direction="column" gap={16} padding="var(--spacing-lg)">
+ *   <Card>Content</Card>
+ * </Layout>
+ * ```
+ */
 import type { CSSProperties, ReactNode } from 'react';
 
 export interface LayoutProps {

@@ -1,3 +1,30 @@
+/**
+ * Card Component - Container with variants and consistent styling
+ *
+ * USAGE RULES:
+ * - ALWAYS use CSS variables for padding: padding="var(--spacing-md)"
+ * - Use variants for styling (don't override with custom classes)
+ * - Never hardcode colors, shadows, or border-radius
+ *
+ * @example
+ * ```tsx
+ * // Basic card
+ * <Card variant="default" padding="var(--spacing-lg)">
+ *   <Typography variant="h2">Title</Typography>
+ * </Card>
+ *
+ * // Elevated card with centered content
+ * <Card variant="elevated" center>
+ *   <Button>Click Me</Button>
+ * </Card>
+ *
+ * // Card with custom gap between children
+ * <Card gap="var(--spacing-md)">
+ *   <Typography variant="h3">Heading</Typography>
+ *   <Typography variant="p2">Description</Typography>
+ * </Card>
+ * ```
+ */
 import type { CSSProperties, ReactNode } from 'react';
 import { Layout } from './Layout';
 import type { LayoutProps } from './Layout';

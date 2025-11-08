@@ -21,3 +21,6 @@ export type { ButtonProps } from './Button';
 
 export { SEO, useStructuredData } from './SEO';
 export type { SEOProps } from './SEO';
+
+export { Reveal, RevealStagger } from './Reveal';
+export type { RevealProps, RevealStaggerProps } from './Reveal';

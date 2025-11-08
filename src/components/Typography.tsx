@@ -1,3 +1,28 @@
+/**
+ * Typography Component - Type-safe text with consistent styling
+ *
+ * USAGE RULES:
+ * - ALWAYS use Typography instead of raw <h1>, <p>, etc.
+ * - Use CSS variables for colors: color="var(--color-text)"
+ * - Never hardcode font sizes - use variants (h1-h4, p1-p4)
+ *
+ * @example
+ * ```tsx
+ * // Headings
+ * <Typography variant="h1">Page Title</Typography>
+ * <Typography variant="h2" align="center">Section Title</Typography>
+ *
+ * // Paragraphs with custom color
+ * <Typography variant="p1" color="var(--color-text-secondary)">
+ *   Large paragraph text
+ * </Typography>
+ *
+ * // Bold text
+ * <Typography variant="p2" weight="bold">
+ *   Important message
+ * </Typography>
+ * ```
+ */
 import type { CSSProperties, ReactNode } from 'react';
 
 export type TypographyVariant = 'h1' | 'h2' | 'h3' | 'h4' | 'p1' | 'p2' | 'p3' | 'p4';

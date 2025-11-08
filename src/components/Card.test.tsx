@@ -17,7 +17,7 @@ describe('Card', () => {
     render(<Card testId="test-card">Content</Card>);
 
     const card = screen.getByTestId('test-card');
-    expect(card.className).toContain('bg-white');
+    expect(card.className).toContain('bg-[var(--color-background)]');
     expect(card.className).toContain('border');
   });
 
@@ -33,7 +33,7 @@ describe('Card', () => {
     render(<Card variant="elevated" testId="test-card">Content</Card>);
 
     const card = screen.getByTestId('test-card');
-    expect(card.className).toContain('shadow-lg');
+    expect(card.className).toContain('shadow-[var(--shadow-lg)]');
   });
 
   it('applies transparent variant styling', () => {
