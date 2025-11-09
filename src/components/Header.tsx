@@ -14,8 +14,8 @@ export function Header({ logo, className }: HeaderProps) {
       direction="row"
       justify="space-between"
       align="center"
-      padding="12px 0"
-      className={`w-full border-b border-[var(--color-border)] bg-[var(--color-background)] md:py-4 ${className}`}
+      padding="12px 16px"
+      className={`w-full border-b border-[var(--color-border)] md:px-8 md:py-4 ${className}`}
       testId="header"
     >
       <Link to="/" data-testid="header-logo" className="flex-shrink-0">
