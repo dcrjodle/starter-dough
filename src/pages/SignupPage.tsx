@@ -7,12 +7,12 @@ export function SignupPage() {
   const navigate = useNavigate();
 
   return (
-    <Page maxWidth="md" centered padding="lg">
+    <Page padding="lg">
       <Layout
         direction="column"
         align="center"
         justify="center"
-        className="min-h-[calc(100vh-200px)] py-12"
+        className="min-h-[calc(100vh-200px)]"
       >
         <SignupForm onSuccess={() => navigate('/')} />
       </Layout>
